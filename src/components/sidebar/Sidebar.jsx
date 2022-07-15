@@ -1,6 +1,6 @@
 import "./sidebar.scss";
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
 import StoreIcon from "@mui/icons-material/Store";
@@ -16,25 +16,25 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="top">
         <span className="logo">dash</span>
-      </div> 
-      <hr/>   
+      </div>
+      <hr />
       <div className="center">
-      <ul>
+        <ul>
           <p className="title">MAIN</p>
           <li>
             <DashboardIcon className="icon" />
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
-            <li>
-              <PersonOutlineIcon className="icon" />
-              <span>Users</span>
-            </li>
-            <li>
-              <StoreIcon className="icon" />
-              <span>Products</span>
-            </li>
-          
+          <li>
+            <PersonOutlineIcon className="icon" />
+            <span>Users</span>
+          </li>
+          <li>
+            <StoreIcon className="icon" />
+            <span>Products</span>
+          </li>
+
           <li>
             <CreditCardIcon className="icon" />
             <span>Orders</span>
