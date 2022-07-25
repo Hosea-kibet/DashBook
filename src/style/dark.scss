@@ -14,9 +14,13 @@
 
     .navbar{
         color:#999;
-        borde-color:#333;
+        border-color:#333;
         .search{
             border-color:gray;
+            input{
+                color: white;
+            }
+            
         }
     }
 
