@@ -1,18 +1,19 @@
-import { DarkMode } from "@mui/icons-material"
-import { createContext } from "react"
-import DarkModeReducer from "./darkModeReducer"
+import { createContext, useReducer } from "react";
+import DarkModeReducer from "./darkModeReducer";
 
 const INITIAL_STATE = {
-    darkMode:false,
-}
+  darkMode: false,
+};
 
-export const DarkModeContext = createContext(INITIAL_STATE)
+export const DarkModeContext = createContext(INITIAL_STATE);
 
-export const DarkModeContextProvider = ({children})=>{
-    const [state, dispatch] = useReducer(DarkModeReducer,INITIAL_STATE)
+export const DarkModeContextProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(DarkModeReducer, INITIAL_STATE);
 
-    return(
-       <DarkModeContext.provider value={{darkMode:state.darkMode,dispatch}}>{children}</DarkModeContext.provider>
-    )
-}
+  return (
+    <DarkModeContext.Provider value={{ darkMode: state.darkMode, dispatch }}>
+      {children}
+    </DarkModeContext.Provider>
+  );
+};
      
